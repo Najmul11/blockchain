@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
-
+import "./Ownable.sol";
 
 pragma solidity ^0.8.22;
 
-contract ZombieFactory {
+contract ZombieFactory is Ownable {
 
     // declare our event here
     event NewZombie(uint zombieId,string name, uint dna);
